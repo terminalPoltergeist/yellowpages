@@ -7,6 +7,13 @@ import (
 	"github.com/julienschmidt/httprouter"
 )
 
+/*
+A type alias for HTTP verbs
+
+Uses all HTTP verbs supported by github.com/julienschmidt/httprouter
+
+https://www.w3.org/Protocols/HTTP/Methods.html
+*/
 type method int
 
 const (
