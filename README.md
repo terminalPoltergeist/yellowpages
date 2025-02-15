@@ -1,6 +1,6 @@
 # Yellowpages
 
-A pluggable HTTP services and middleware library.
+A declarative HTTP services and middleware library.
 
 ## Why?
 
@@ -100,6 +100,8 @@ A `Service` is of type `map[Endpoint]httprouter.Handle`.
 An `Endpoint` is simply a combination of an HTTP verb, called an `Action`, and a route path.
 
 The `httprouter.Handle` function comes from [github.com/julienschmidt/httprouter](https://github.com/julienschmidt/httprouter)
+
+An Endpoint:Handler entry encapsulates an atomic behaviour of a service.
 
 ### Register the service with your application router
 
